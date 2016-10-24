@@ -117,24 +117,16 @@ public class MainActivity extends AppCompatActivity {
                      * below single line of code from Gson saves you from writing the json parsing yourself which is commented below
                      */
                     DrinkModel drinkModel = gson.fromJson(finalObject.toString(), DrinkModel.class);
-//                    movieModel.setMovie(finalObject.getString("movie"));
-//                    movieModel.setYear(finalObject.getInt("year"));
-//                    movieModel.setRating((float) finalObject.getDouble("rating"));
-//                    movieModel.setDirector(finalObject.getString("director"));
+//                    drinkModel.setMovie(finalObject.getString("movie"));
+//                    drinkModel.setYear(finalObject.getInt("year"));
+//                    drinkModel.setRating((float) finalObject.getDouble("rating"));
+//                    drinkModel.setDirector(finalObject.getString("director"));
 //
-//                    movieModel.setDuration(finalObject.getString("duration"));
-//                    movieModel.setTagline(finalObject.getString("tagline"));
-//                    movieModel.setImage(finalObject.getString("image"));
-//                    movieModel.setStory(finalObject.getString("story"));
+//                    drinkModel.setDuration(finalObject.getString("duration"));
+//                    drinkModel.setTagline(finalObject.getString("tagline"));
+//                    drinkModel.setImage(finalObject.getString("image"));
+//                    drinkModel.setStory(finalObject.getString("story"));
 //
-//                    List<MovieModel.Cast> castList = new ArrayList<>();
-//                    for(int j=0; j<finalObject.getJSONArray("cast").length(); j++){
-//                        MovieModel.Cast cast = new MovieModel.Cast();
-//                        cast.setName(finalObject.getJSONArray("cast").getJSONObject(j).getString("name"));
-//                        castList.add(cast);
-//                    }
-//                    movieModel.setCastList(castList);
-                    // adding the final object in the list
                     drinkModelList.add(drinkModel);
                 }
                 return drinkModelList;
